@@ -92,7 +92,7 @@ public class RobotExample5 {
         }
     }
 
-    private void juneIsDone() {
+    private synchronized void juneIsDone() {
         synchronized (talkingStick) {
             juneDone = true;
             talkingStick.notify();
